@@ -1,0 +1,27 @@
+POST http://127.0.0.1:8000/signup 
+Content-Type: application/json
+
+{ "username": "henrique", 
+"password": "222515", 
+"email": "henrique@mail.com", 
+"cpf": "8199970098",  
+"telefone": "8199970098", 
+"data_nascimento": "1990-01-01" }
+
+###
+
+POST http://127.0.0.1:8000/login 
+Content-Type: application/json
+
+{ "username": "adam1", "password": "Pass1234!" }
+###
+POST http://127.0.0.1:8000/login 
+Content-Type: application/json
+
+{ "username": "henrique", "password": "222515" }
+
+###
+
+GET http://127.0.0.1:8000/test_token 
+Content-Type: application/json
+Authorization: token be7c998678f8b4566453b4b282b2921f57f0a038
