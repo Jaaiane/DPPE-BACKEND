@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'auth_app',
+    'biblioteca',
 ]
 
 AUTH_USER_MODEL = 'auth_app.Usuario'  # Substitua 'auth_app' pelo nome do seu aplicativo

@@ -25,3 +25,7 @@ Content-Type: application/json
 GET http://127.0.0.1:8000/test_token 
 Content-Type: application/json
 Authorization: token be7c998678f8b4566453b4b282b2921f57f0a038
+
+###
+GET http://127.0.0.1:8000/test_biblioteca 
+Content-Type: application/json
