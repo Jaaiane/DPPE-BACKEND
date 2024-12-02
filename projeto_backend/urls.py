@@ -1,11 +1,8 @@
-from django.urls import path, re_path
-from auth_app import views as auth
-from biblioteca import views as bibli
-
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    re_path('login', auth.login),
-    re_path('signup', auth.signup),
-    re_path('test_token', auth.test_token),
-    re_path('test_biblioteca', bibli.ola),
+    path('admin/', admin.site.urls),
+    path('biblioteca/v1/', include('biblioteca.urls')),  # Incluindo as URLs da API
+    path('auth_app/', include('auth_app.urls')),
 ]
