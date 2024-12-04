@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'auth_app',
     'biblioteca',
+    'agendamento',
+    'processos',
     'rest_framework_simplejwt',
 ]
 
