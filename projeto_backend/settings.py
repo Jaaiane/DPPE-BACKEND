@@ -48,6 +48,11 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = 'auth_app.Usuario'  # Substitua 'auth_app' pelo nome do seu aplicativo
 
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
